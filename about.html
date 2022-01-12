@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Sandra Pereira is a front-end developer from Portugal"
+    />
+    <title>About Sandra</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -18,7 +22,6 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/portfolio.css" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -28,8 +31,30 @@
       src="https://kit.fontawesome.com/d76edfe581.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="/styles/portfolio.css" />
   </head>
   <body>
+    <div class="container">
+      <nav>
+        <a href="/" title="Homepage"
+          ><img class="logo" src="/images/logo.png" alt="Sandra Logo"
+        /></a>
+        <ul>
+          <li>
+            <a href="/" title="Homepage">Home</a>
+          </li>
+          <li class="active">
+            <a href="/about.html" title="About Sandra">About</a>
+          </li>
+          <li>
+            <a href="/work.html" title="Sandra's work">Work</a>
+          </li>
+          <li>
+            <a href="/contact.html" title="Contact Sandra">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="content-container container">
       <div class="content">
         <h1>Hi, I am Sandra Pereira</h1>
@@ -40,8 +65,57 @@
           everything is well explained, homework and deadlines are good for keep
           focus
         </p>
-        <a class="btn btn-branding" href="">Check out my work</a>
+        <a class="btn btn-branding" title="See my projects" href="/work.html"
+          >Check out my work</a
+        >
       </div>
     </div>
+    <footer class="container">
+      <div class="contact-box d-flex justify-content-between">
+        <div>
+          <h3>Work Inquiry</h3>
+          <p class="text-muted">Let's work together</p>
+        </div>
+        <div>
+          <a href="/contact.html" title="Contact me" class="btn btn-branding"
+            >Contact Me</a
+          >
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mb-5">
+        <a
+          class="email-link"
+          href="mailto:sandrambspereira@gmail.com"
+          title="Email Sandra"
+          >sandrambspereira@gmail.com</a
+        >
+      </div>
+      <div class="social-links d-flex justify-content-center mb-5">
+        <a
+          href="https://www.instagram.com/smbsp/"
+          title="Instagram Profile"
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/sandra-pereira-873747178/"
+          title="LinkedIn Profile"
+          target="_blank"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a
+          href="https://github.com/sandrambsp"
+          title="Github Profile"
+          target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+      <p class="text-center mt-5">
+        👩‍💻 This project was coded by Sandra Pereira and it is
+        <a href="https://github.com/sandrambsp/portfolio-project"
+          >open-sourced</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
